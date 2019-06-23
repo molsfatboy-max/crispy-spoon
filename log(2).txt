@@ -1,0 +1,347 @@
+[00:00:00] Build started
+[00:00:00] git clone -q https://github.com/zmb3/spotify.git c:\gopath\src\github.com\zmb3
+[00:00:01] git fetch -q origin +refs/pull/95/merge:
+[00:00:01] git checkout -qf FETCH_HEAD
+[00:00:02] go get -v -d -t github.com/zmb3/spotify
+[00:00:02] github.com/zmb3/spotify (download)
+[00:00:05] Fetching https://golang.org/x/oauth2?go-get=1
+[00:00:05] Parsing meta tags from https://golang.org/x/oauth2?go-get=1 (status code 200)
+[00:00:05] get "golang.org/x/oauth2": found meta tag get.metaImport{Prefix:"golang.org/x/oauth2", VCS:"git", RepoRoot:"https://go.googlesource.com/oauth2"} at https://golang.org/x/oauth2?go-get=1
+[00:00:05] golang.org/x/oauth2 (download)
+[00:00:07] Fetching https://golang.org/x/net/context/ctxhttp?go-get=1
+[00:00:07] Parsing meta tags from https://golang.org/x/net/context/ctxhttp?go-get=1 (status code 200)
+[00:00:07] get "golang.org/x/net/context/ctxhttp": found meta tag get.metaImport{Prefix:"golang.org/x/net", VCS:"git", RepoRoot:"https://go.googlesource.com/net"} at https://golang.org/x/net/context/ctxhttp?go-get=1
+[00:00:07] get "golang.org/x/net/context/ctxhttp": verifying non-authoritative meta tag
+[00:00:07] Fetching https://golang.org/x/net?go-get=1
+[00:00:07] Parsing meta tags from https://golang.org/x/net?go-get=1 (status code 200)
+[00:00:07] golang.org/x/net (download)
+[00:00:11] go test -v -cover ./...
+[00:00:18] === RUN   TestFindAlbum
+[00:00:18] --- PASS: TestFindAlbum (0.01s)
+[00:00:18] === RUN   TestFindAlbumBadID
+[00:00:18] --- PASS: TestFindAlbumBadID (0.00s)
+[00:00:18] === RUN   TestFindAlbums
+[00:00:18] --- PASS: TestFindAlbums (0.00s)
+[00:00:18] === RUN   TestFindAlbumTracks
+[00:00:18] --- PASS: TestFindAlbumTracks (0.00s)
+[00:00:18] === RUN   TestFindArtist
+[00:00:18] --- PASS: TestFindArtist (0.00s)
+[00:00:18] === RUN   TestArtistTopTracks
+[00:00:18] --- PASS: TestArtistTopTracks (0.00s)
+[00:00:18] === RUN   TestRelatedArtists
+[00:00:18] --- PASS: TestRelatedArtists (0.00s)
+[00:00:18] === RUN   TestArtistAlbumsFiltered
+[00:00:18] --- PASS: TestArtistAlbumsFiltered (0.00s)
+[00:00:18] === RUN   TestAudioAnalysis
+[00:00:18] --- PASS: TestAudioAnalysis (0.00s)
+[00:00:18] === RUN   TestAudioFeatures
+[00:00:18] --- PASS: TestAudioFeatures (0.00s)
+[00:00:18] === RUN   TestGetCategories
+[00:00:18] --- PASS: TestGetCategories (0.00s)
+[00:00:18] === RUN   TestGetCategory
+[00:00:18] --- PASS: TestGetCategory (0.00s)
+[00:00:18] === RUN   TestGetCategoryPlaylists
+[00:00:18] --- PASS: TestGetCategoryPlaylists (0.00s)
+[00:00:18] === RUN   TestGetCategoryOpt
+[00:00:18] --- PASS: TestGetCategoryOpt (0.00s)
+[00:00:18] === RUN   TestGetCategoryPlaylistsOpt
+[00:00:18] --- PASS: TestGetCategoryPlaylistsOpt (0.00s)
+[00:00:18] === RUN   TestGetCategoriesInvalidToken
+[00:00:18] --- PASS: TestGetCategoriesInvalidToken (0.00s)
+[00:00:18] === RUN   TestUserHasTracks
+[00:00:18] --- PASS: TestUserHasTracks (0.00s)
+[00:00:18] === RUN   TestAddTracksToLibrary
+[00:00:18] --- PASS: TestAddTracksToLibrary (0.00s)
+[00:00:18] === RUN   TestAddTracksToLibraryFailure
+[00:00:18] --- PASS: TestAddTracksToLibraryFailure (0.00s)
+[00:00:18] === RUN   TestRemoveTracksFromLibrary
+[00:00:18] --- PASS: TestRemoveTracksFromLibrary (0.00s)
+[00:00:18] === RUN   TestTransferPlaybackDeviceUnavailable
+[00:00:18] --- PASS: TestTransferPlaybackDeviceUnavailable (0.00s)
+[00:00:18] === RUN   TestTransferPlayback
+[00:00:18] --- PASS: TestTransferPlayback (0.00s)
+[00:00:18] === RUN   TestVolume
+[00:00:18] --- PASS: TestVolume (0.00s)
+[00:00:18] === RUN   TestPlayerDevices
+[00:00:18] --- PASS: TestPlayerDevices (0.00s)
+[00:00:18] === RUN   TestPlayerState
+[00:00:18] --- PASS: TestPlayerState (0.00s)
+[00:00:18] === RUN   TestPlayerCurrentlyPlaying
+[00:00:18] --- PASS: TestPlayerCurrentlyPlaying (0.00s)
+[00:00:18] === RUN   TestPlayerRecentlyPlayed
+[00:00:18] --- PASS: TestPlayerRecentlyPlayed (0.00s)
+[00:00:18] === RUN   TestPlayArgsError
+[00:00:18] --- PASS: TestPlayArgsError (0.00s)
+[00:00:18] === RUN   TestFeaturedPlaylists
+[00:00:18] --- PASS: TestFeaturedPlaylists (0.00s)
+[00:00:18] === RUN   TestFeaturedPlaylistsExpiredToken
+[00:00:18] --- PASS: TestFeaturedPlaylistsExpiredToken (0.00s)
+[00:00:18] === RUN   TestPlaylistsForUser
+[00:00:18] --- PASS: TestPlaylistsForUser (0.00s)
+[00:00:18] === RUN   TestGetPlaylistOpt
+[00:00:18] --- PASS: TestGetPlaylistOpt (0.00s)
+[00:00:18] === RUN   TestFollowPlaylistSetsContentType
+[00:00:18] --- PASS: TestFollowPlaylistSetsContentType (0.00s)
+[00:00:18] === RUN   TestGetPlaylistTracks
+[00:00:18] --- PASS: TestGetPlaylistTracks (0.00s)
+[00:00:18] === RUN   TestUserFollowsPlaylist
+[00:00:18] --- PASS: TestUserFollowsPlaylist (0.00s)
+[00:00:18] === RUN   TestCreatePlaylist
+[00:00:18] --- PASS: TestCreatePlaylist (0.00s)
+[00:00:18] === RUN   TestRenamePlaylist
+[00:00:18] --- PASS: TestRenamePlaylist (0.00s)
+[00:00:18] === RUN   TestChangePlaylistAccess
+[00:00:18] --- PASS: TestChangePlaylistAccess (0.00s)
+[00:00:18] === RUN   TestChangePlaylistDescription
+[00:00:18] --- PASS: TestChangePlaylistDescription (0.00s)
+[00:00:18] === RUN   TestChangePlaylistNamdAndAccess
+[00:00:18] --- PASS: TestChangePlaylistNamdAndAccess (0.00s)
+[00:00:18] === RUN   TestChangePlaylistNamdAccessAndDescription
+[00:00:18] --- PASS: TestChangePlaylistNamdAccessAndDescription (0.00s)
+[00:00:18] === RUN   TestChangePlaylistNameFailure
+[00:00:18] --- PASS: TestChangePlaylistNameFailure (0.00s)
+[00:00:18] === RUN   TestAddTracksToPlaylist
+[00:00:18] --- PASS: TestAddTracksToPlaylist (0.00s)
+[00:00:18] === RUN   TestRemoveTracksFromPlaylist
+[00:00:18] --- PASS: TestRemoveTracksFromPlaylist (0.00s)
+[00:00:18] === RUN   TestRemoveTracksFromPlaylistOpt
+[00:00:18] --- PASS: TestRemoveTracksFromPlaylistOpt (0.00s)
+[00:00:18] === RUN   TestReplacePlaylistTracks
+[00:00:18] --- PASS: TestReplacePlaylistTracks (0.00s)
+[00:00:18] === RUN   TestReplacePlaylistTracksForbidden
+[00:00:18] --- PASS: TestReplacePlaylistTracksForbidden (0.00s)
+[00:00:18] === RUN   TestReorderPlaylistRequest
+[00:00:18] --- PASS: TestReorderPlaylistRequest (0.00s)
+[00:00:18] === RUN   TestSetPlaylistImage
+[00:00:18] --- PASS: TestSetPlaylistImage (0.00s)
+[00:00:18] === RUN   TestGetRecommendations
+[00:00:18] --- PASS: TestGetRecommendations (0.00s)
+[00:00:18] === RUN   TestSetSeedValues
+[00:00:18] --- PASS: TestSetSeedValues (0.00s)
+[00:00:18] === RUN   TestSetTrackAttributesValues
+[00:00:18] --- PASS: TestSetTrackAttributesValues (0.00s)
+[00:00:18] === RUN   TestSetEmptyTrackAttributesValues
+[00:00:18] --- PASS: TestSetEmptyTrackAttributesValues (0.00s)
+[00:00:18] === RUN   TestSearchArtist
+[00:00:18] --- PASS: TestSearchArtist (0.00s)
+[00:00:18] === RUN   TestSearchTracks
+[00:00:18] --- PASS: TestSearchTracks (0.00s)
+[00:00:18] === RUN   TestSearchPlaylistTrack
+[00:00:18] --- PASS: TestSearchPlaylistTrack (0.00s)
+[00:00:18] === RUN   TestPrevNextSearchPageErrors
+[00:00:18] --- PASS: TestPrevNextSearchPageErrors (0.00s)
+[00:00:18] === RUN   TestNewReleases
+[00:00:18] --- PASS: TestNewReleases (0.00s)
+[00:00:18] === RUN   TestNewReleasesRateLimitExceeded
+[00:00:18] === PAUSE TestNewReleasesRateLimitExceeded
+[00:00:18] === RUN   TestFindTrack
+[00:00:18] --- PASS: TestFindTrack (0.00s)
+[00:00:18] === RUN   TestFindTracksSimple
+[00:00:18] --- PASS: TestFindTracksSimple (0.00s)
+[00:00:18] === RUN   TestFindTracksNotFound
+[00:00:18] --- PASS: TestFindTracksNotFound (0.00s)
+[00:00:18] === RUN   TestUserProfile
+[00:00:18] --- PASS: TestUserProfile (0.00s)
+[00:00:18] === RUN   TestCurrentUser
+[00:00:18] --- PASS: TestCurrentUser (0.00s)
+[00:00:18] === RUN   TestFollowUsersMissingScope
+[00:00:18] --- PASS: TestFollowUsersMissingScope (0.00s)
+[00:00:18] === RUN   TestFollowArtist
+[00:00:18] --- PASS: TestFollowArtist (0.00s)
+[00:00:18] === RUN   TestFollowArtistAutoRetry
+[00:00:18] === PAUSE TestFollowArtistAutoRetry
+[00:00:18] === RUN   TestFollowUsersInvalidToken
+[00:00:18] --- PASS: TestFollowUsersInvalidToken (0.00s)
+[00:00:18] === RUN   TestUserFollows
+[00:00:18] --- PASS: TestUserFollows (0.00s)
+[00:00:18] === RUN   TestCurrentUsersTracks
+[00:00:18] --- PASS: TestCurrentUsersTracks (0.00s)
+[00:00:18] === RUN   TestCurrentUsersAlbums
+[00:00:18] --- PASS: TestCurrentUsersAlbums (0.00s)
+[00:00:18] === RUN   TestCurrentUsersPlaylists
+[00:00:18] --- PASS: TestCurrentUsersPlaylists (0.00s)
+[00:00:18] === RUN   TestUsersFollowedArtists
+[00:00:18] --- PASS: TestUsersFollowedArtists (0.00s)
+[00:00:18] === RUN   TestCurrentUsersFollowedArtistsOpt
+[00:00:18] --- PASS: TestCurrentUsersFollowedArtistsOpt (0.00s)
+[00:00:18] === RUN   TestCurrentUsersTopArtists
+[00:00:18] --- PASS: TestCurrentUsersTopArtists (0.00s)
+[00:00:18] === RUN   TestCurrentUsersTopTracks
+[00:00:18] --- PASS: TestCurrentUsersTopTracks (0.00s)
+[00:00:18] === CONT  TestNewReleasesRateLimitExceeded
+[00:00:18] === CONT  TestFollowArtistAutoRetry
+[00:00:18] --- PASS: TestFollowArtistAutoRetry (2.01s)
+[00:00:18] --- PASS: TestNewReleasesRateLimitExceeded (2.01s)
+[00:00:18] PASS
+[00:00:18] coverage: 59.2% of statements
+[00:00:18] ok  	github.com/zmb3	2.101s	coverage: 59.2% of statements
+[00:00:18] ?   	github.com/zmb3/examples/authenticate/authcode	[no test files]
+[00:00:18] ?   	github.com/zmb3/examples/authenticate/clientcreds	[no test files]
+[00:00:18] ?   	github.com/zmb3/examples/player	[no test files]
+[00:00:18] ?   	github.com/zmb3/examples/profile	[no test files]
+[00:00:18] ?   	github.com/zmb3/examples/search	[no test files]
+[00:00:20] === RUN   TestFindAlbum
+[00:00:20] --- PASS: TestFindAlbum (0.00s)
+[00:00:20] === RUN   TestFindAlbumBadID
+[00:00:20] --- PASS: TestFindAlbumBadID (0.00s)
+[00:00:20] === RUN   TestFindAlbums
+[00:00:20] --- PASS: TestFindAlbums (0.00s)
+[00:00:20] === RUN   TestFindAlbumTracks
+[00:00:20] --- PASS: TestFindAlbumTracks (0.00s)
+[00:00:20] === RUN   TestFindArtist
+[00:00:20] --- PASS: TestFindArtist (0.00s)
+[00:00:20] === RUN   TestArtistTopTracks
+[00:00:20] --- PASS: TestArtistTopTracks (0.00s)
+[00:00:20] === RUN   TestRelatedArtists
+[00:00:20] --- PASS: TestRelatedArtists (0.00s)
+[00:00:20] === RUN   TestArtistAlbumsFiltered
+[00:00:20] --- PASS: TestArtistAlbumsFiltered (0.00s)
+[00:00:20] === RUN   TestAudioAnalysis
+[00:00:20] --- PASS: TestAudioAnalysis (0.00s)
+[00:00:20] === RUN   TestAudioFeatures
+[00:00:20] --- PASS: TestAudioFeatures (0.00s)
+[00:00:20] === RUN   TestGetCategories
+[00:00:20] --- PASS: TestGetCategories (0.00s)
+[00:00:20] === RUN   TestGetCategory
+[00:00:20] --- PASS: TestGetCategory (0.00s)
+[00:00:20] === RUN   TestGetCategoryPlaylists
+[00:00:20] --- PASS: TestGetCategoryPlaylists (0.00s)
+[00:00:20] === RUN   TestGetCategoryOpt
+[00:00:20] --- PASS: TestGetCategoryOpt (0.00s)
+[00:00:20] === RUN   TestGetCategoryPlaylistsOpt
+[00:00:20] --- PASS: TestGetCategoryPlaylistsOpt (0.00s)
+[00:00:20] === RUN   TestGetCategoriesInvalidToken
+[00:00:20] --- PASS: TestGetCategoriesInvalidToken (0.00s)
+[00:00:20] === RUN   TestUserHasTracks
+[00:00:20] --- PASS: TestUserHasTracks (0.00s)
+[00:00:20] === RUN   TestAddTracksToLibrary
+[00:00:20] --- PASS: TestAddTracksToLibrary (0.00s)
+[00:00:20] === RUN   TestAddTracksToLibraryFailure
+[00:00:20] --- PASS: TestAddTracksToLibraryFailure (0.00s)
+[00:00:20] === RUN   TestRemoveTracksFromLibrary
+[00:00:20] --- PASS: TestRemoveTracksFromLibrary (0.00s)
+[00:00:20] === RUN   TestTransferPlaybackDeviceUnavailable
+[00:00:20] --- PASS: TestTransferPlaybackDeviceUnavailable (0.00s)
+[00:00:20] === RUN   TestTransferPlayback
+[00:00:20] --- PASS: TestTransferPlayback (0.00s)
+[00:00:20] === RUN   TestVolume
+[00:00:20] --- PASS: TestVolume (0.00s)
+[00:00:20] === RUN   TestPlayerDevices
+[00:00:20] --- PASS: TestPlayerDevices (0.00s)
+[00:00:20] === RUN   TestPlayerState
+[00:00:20] --- PASS: TestPlayerState (0.00s)
+[00:00:20] === RUN   TestPlayerCurrentlyPlaying
+[00:00:20] --- PASS: TestPlayerCurrentlyPlaying (0.00s)
+[00:00:20] === RUN   TestPlayerRecentlyPlayed
+[00:00:20] --- PASS: TestPlayerRecentlyPlayed (0.00s)
+[00:00:20] === RUN   TestPlayArgsError
+[00:00:20] --- PASS: TestPlayArgsError (0.00s)
+[00:00:20] === RUN   TestFeaturedPlaylists
+[00:00:20] --- PASS: TestFeaturedPlaylists (0.00s)
+[00:00:20] === RUN   TestFeaturedPlaylistsExpiredToken
+[00:00:20] --- PASS: TestFeaturedPlaylistsExpiredToken (0.00s)
+[00:00:20] === RUN   TestPlaylistsForUser
+[00:00:20] --- PASS: TestPlaylistsForUser (0.00s)
+[00:00:20] === RUN   TestGetPlaylistOpt
+[00:00:20] --- PASS: TestGetPlaylistOpt (0.00s)
+[00:00:20] === RUN   TestFollowPlaylistSetsContentType
+[00:00:20] --- PASS: TestFollowPlaylistSetsContentType (0.00s)
+[00:00:20] === RUN   TestGetPlaylistTracks
+[00:00:20] --- PASS: TestGetPlaylistTracks (0.00s)
+[00:00:20] === RUN   TestUserFollowsPlaylist
+[00:00:20] --- PASS: TestUserFollowsPlaylist (0.00s)
+[00:00:20] === RUN   TestCreatePlaylist
+[00:00:20] --- PASS: TestCreatePlaylist (0.00s)
+[00:00:20] === RUN   TestRenamePlaylist
+[00:00:20] --- PASS: TestRenamePlaylist (0.00s)
+[00:00:20] === RUN   TestChangePlaylistAccess
+[00:00:20] --- PASS: TestChangePlaylistAccess (0.00s)
+[00:00:20] === RUN   TestChangePlaylistDescription
+[00:00:20] --- PASS: TestChangePlaylistDescription (0.00s)
+[00:00:20] === RUN   TestChangePlaylistNamdAndAccess
+[00:00:20] --- PASS: TestChangePlaylistNamdAndAccess (0.00s)
+[00:00:20] === RUN   TestChangePlaylistNamdAccessAndDescription
+[00:00:20] --- PASS: TestChangePlaylistNamdAccessAndDescription (0.00s)
+[00:00:20] === RUN   TestChangePlaylistNameFailure
+[00:00:20] --- PASS: TestChangePlaylistNameFailure (0.00s)
+[00:00:20] === RUN   TestAddTracksToPlaylist
+[00:00:20] --- PASS: TestAddTracksToPlaylist (0.00s)
+[00:00:20] === RUN   TestRemoveTracksFromPlaylist
+[00:00:20] --- PASS: TestRemoveTracksFromPlaylist (0.00s)
+[00:00:20] === RUN   TestRemoveTracksFromPlaylistOpt
+[00:00:20] --- PASS: TestRemoveTracksFromPlaylistOpt (0.00s)
+[00:00:20] === RUN   TestReplacePlaylistTracks
+[00:00:20] --- PASS: TestReplacePlaylistTracks (0.00s)
+[00:00:20] === RUN   TestReplacePlaylistTracksForbidden
+[00:00:20] --- PASS: TestReplacePlaylistTracksForbidden (0.00s)
+[00:00:20] === RUN   TestReorderPlaylistRequest
+[00:00:20] --- PASS: TestReorderPlaylistRequest (0.00s)
+[00:00:20] === RUN   TestSetPlaylistImage
+[00:00:20] --- PASS: TestSetPlaylistImage (0.00s)
+[00:00:20] === RUN   TestGetRecommendations
+[00:00:20] --- PASS: TestGetRecommendations (0.00s)
+[00:00:20] === RUN   TestSetSeedValues
+[00:00:20] --- PASS: TestSetSeedValues (0.00s)
+[00:00:20] === RUN   TestSetTrackAttributesValues
+[00:00:20] --- PASS: TestSetTrackAttributesValues (0.00s)
+[00:00:20] === RUN   TestSetEmptyTrackAttributesValues
+[00:00:20] --- PASS: TestSetEmptyTrackAttributesValues (0.00s)
+[00:00:20] === RUN   TestSearchArtist
+[00:00:20] --- PASS: TestSearchArtist (0.00s)
+[00:00:20] === RUN   TestSearchTracks
+[00:00:20] --- PASS: TestSearchTracks (0.00s)
+[00:00:20] === RUN   TestSearchPlaylistTrack
+[00:00:20] --- PASS: TestSearchPlaylistTrack (0.00s)
+[00:00:20] === RUN   TestPrevNextSearchPageErrors
+[00:00:20] --- PASS: TestPrevNextSearchPageErrors (0.00s)
+[00:00:20] === RUN   TestNewReleases
+[00:00:20] --- PASS: TestNewReleases (0.00s)
+[00:00:20] === RUN   TestNewReleasesRateLimitExceeded
+[00:00:20] === PAUSE TestNewReleasesRateLimitExceeded
+[00:00:20] === RUN   TestFindTrack
+[00:00:20] --- PASS: TestFindTrack (0.00s)
+[00:00:20] === RUN   TestFindTracksSimple
+[00:00:20] --- PASS: TestFindTracksSimple (0.00s)
+[00:00:20] === RUN   TestFindTracksNotFound
+[00:00:20] --- PASS: TestFindTracksNotFound (0.00s)
+[00:00:20] === RUN   TestUserProfile
+[00:00:20] --- PASS: TestUserProfile (0.00s)
+[00:00:20] === RUN   TestCurrentUser
+[00:00:20] --- PASS: TestCurrentUser (0.00s)
+[00:00:20] === RUN   TestFollowUsersMissingScope
+[00:00:20] --- PASS: TestFollowUsersMissingScope (0.00s)
+[00:00:20] === RUN   TestFollowArtist
+[00:00:20] --- PASS: TestFollowArtist (0.00s)
+[00:00:20] === RUN   TestFollowArtistAutoRetry
+[00:00:20] === PAUSE TestFollowArtistAutoRetry
+[00:00:20] === RUN   TestFollowUsersInvalidToken
+[00:00:20] --- PASS: TestFollowUsersInvalidToken (0.00s)
+[00:00:20] === RUN   TestUserFollows
+[00:00:20] --- PASS: TestUserFollows (0.00s)
+[00:00:20] === RUN   TestCurrentUsersTracks
+[00:00:20] --- PASS: TestCurrentUsersTracks (0.00s)
+[00:00:20] === RUN   TestCurrentUsersAlbums
+[00:00:20] --- PASS: TestCurrentUsersAlbums (0.00s)
+[00:00:20] === RUN   TestCurrentUsersPlaylists
+[00:00:20] --- PASS: TestCurrentUsersPlaylists (0.00s)
+[00:00:20] === RUN   TestUsersFollowedArtists
+[00:00:20] --- PASS: TestUsersFollowedArtists (0.00s)
+[00:00:20] === RUN   TestCurrentUsersFollowedArtistsOpt
+[00:00:20] --- PASS: TestCurrentUsersFollowedArtistsOpt (0.00s)
+[00:00:20] === RUN   TestCurrentUsersTopArtists
+[00:00:20] --- PASS: TestCurrentUsersTopArtists (0.00s)
+[00:00:20] === RUN   TestCurrentUsersTopTracks
+[00:00:20] --- PASS: TestCurrentUsersTopTracks (0.00s)
+[00:00:20] === CONT  TestNewReleasesRateLimitExceeded
+[00:00:20] === CONT  TestFollowArtistAutoRetry
+[00:00:20] --- PASS: TestFollowArtistAutoRetry (2.01s)
+[00:00:20] --- PASS: TestNewReleasesRateLimitExceeded (2.01s)
+[00:00:20] PASS
+[00:00:20] coverage: 59.4% of statements
+[00:00:20] ok  	github.com/zmb3/spotify	2.162s	coverage: 59.4% of statements
+[00:00:20] ?   	github.com/zmb3/spotify/examples/authenticate/authcode	[no test files]
+[00:00:20] ?   	github.com/zmb3/spotify/examples/authenticate/clientcreds	[no test files]
+[00:00:20] ?   	github.com/zmb3/spotify/examples/player	[no test files]
+[00:00:20] ?   	github.com/zmb3/spotify/examples/profile	[no test files]
+[00:00:20] ?   	github.com/zmb3/spotify/examples/search	[no test files]
+[00:00:20] Build success
